@@ -10,7 +10,7 @@ if(NOT LIBJPEG_DIR)
 endif()
 message(STATUS "LibJPEG dir is ${LIBJPEG_DIR}, change via -DLIBJPEG_DIR=<dir>")
 
-set(IMGLIB_MAIN_FILES img_lib.h img_lib.cpp)
+set(IMGLIB_MAIN_FILES img_lib.h img_lib.cpp editor.h editor.cpp)
 
 # к файлам форматов добавим JPEG
 set(IMGLIB_FORMAT_FILES 
