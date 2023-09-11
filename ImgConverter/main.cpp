@@ -219,7 +219,7 @@ int main(int argc, const char** argv) {
     }
 
     if(argc > 3 && (TryApplyCommand(image, argc, argv) == static_cast<int>(Errors::UsedOptions))) {
-        cerr << "Option is wrong. Usage: [convert|hmirror|vmirror|sobel|negate|cypher <key>|brightness <amount of brightness>|crop <lt_x> <lt_y> <rd_x> <rd_y>]"sv << endl;
+        cerr << "Option is wrong. Usage: [hmirror|vmirror|sobel|negate|cypher <key>|brightness <value>|crop <lt_x> <lt_y> <rd_x> <rd_y>]"sv << endl;
         return static_cast<int>(Errors::UsedOptions);
     }
 
