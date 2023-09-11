@@ -59,12 +59,15 @@
 Пример: `./imgconv cat.jpg cat_sobel.jpg sobel`
 <img src="https://github.com/NIKTRUP/ImageLib/assets/72292425/8e00dfcf-ec52-4134-9e60-ffc3be52c889" width=65% height=65%>
 
+# Сборка и установка
+Для сборки программы необходим компилятор С++, поддерживающий стандарт не ниже С++17, CMake не ниже версии 3.11. , библиотека LibJPEG
+  > ## Сборка с помощью CMake
+  > 1.	Для поддержки файлов jpeg используется библиотека LibJPEG `https://www.ijg.org/`.
+  В папке libjpeg собрана библиотека под Linux (Ubuntu 22.04),
+  > 2.	Создайте папку `build` для сборки программы.
+  > 3.	Перейдите в `build` и введите в терминал команду `cmake ../ImgConverter -DCMAKE_BUILD_TYPE=Debug -DLIBJPEG_DIR=../libjpeg`
+  (Если ваша конфигурация файлов отличается, то общий вид команды `cmake <Путь CMakeLists.txt ImgConverter> -DCMAKE_BUILD_TYPE=<Тип сборки> -DLIBJPEG_DIR=<Путь к собранной библиотеке libjpeg>`).
+  > 5.	Введите команду : `make` или `make -j<кол-во ядер процессора>` для ускорения процесса сборки 
+  > 6.	После успешной сборки в каталоге `build` появится исполняемый файл `imgconv` (`imgconv.exe` в Windows)
 
-> ## Сборка с помощью CMake
-> 1.	Для поддержки файлов jpeg используется библиотека LibJPEG `https://www.ijg.org/`.
-В папке libjpeg собрана библиотека под Linux (Ubuntu 22.04),
-> 2.	Создайте папку `build` для сборки программы.
-> 3.	Перейдите в `build` и введите в терминал команду `cmake ../ImgConverter -DCMAKE_BUILD_TYPE=Debug -DLIBJPEG_DIR=../libjpeg`
-(Если ваша конфигурация файлов отличается, то общий вид команды `cmake <Путь CMakeLists.txt ImgConverter> -DCMAKE_BUILD_TYPE=<Тип сборки> -DLIBJPEG_DIR=<Путь к собранной библиотеке libjpeg>`).
-> 5.	Введите команду : `make` или `make -j<кол-во ядер процессора>` для ускорения процесса сборки 
-> 6.	После успешной сборки в каталоге `build` появится исполняемый файл `imgconv` (`imgconv.exe` в Windows)
+
