@@ -16,49 +16,44 @@
 
 * Конвертирование изображения из одного типа в другой. Поддержка `ppm`, `jpeg`, `bmp`.\
 Пример: `./imgconv cat.ppm cat.jpg`
-<img src="https://github.com/NIKTRUP/ImageLib/assets/72292425/c584d77b-d75c-4832-b8ea-e83ae97080fe" width=65% height=65%>
-
+<img src="https://github.com/NTG-TPL/ImageConverter/assets/72292425/2e71d01d-d901-4698-8ea8-605c3a387c32" width=65% height=65%>
 
 * Повысить яркость изображения.\
 Пример: `./imgconv cat.ppm cat.jpg brightness 50`
-<img src="https://github.com/NIKTRUP/ImageLib/assets/72292425/776ff205-ca7c-455f-ba07-4b42c53a1bb3" width=65% height=65%>
+<img src="https://github.com/NTG-TPL/ImageConverter/assets/72292425/64069301-3838-4cec-97b6-811ab7cdb2e5" width=65% height=65%>
 
 
 * Понизить яркость изображения.\
 Пример: `./imgconv cat.ppm cat.jpg brightness -50`
-<img src="https://github.com/NIKTRUP/ImageLib/assets/72292425/d10ea50b-b68d-49a1-9662-9242f4b2fc75" width=65% height=65%>
-
+<img src="https://github.com/NTG-TPL/ImageConverter/assets/72292425/7d57753c-d67a-455c-8acd-5db09abd8a48" width=65% height=65%>
 
 * Обрезать.\
 Пример: `./imgconv cat.jpg cat_crop.jpg crop 450 150 1251 900`. Первые 2 числа после команды `crop` задают верхний левый угол в пикселях, вторые два числа - правый нижний угол.
 Если размеры задаваемого поля выходят за границы изображения, то выбрасывается ошибка.
-<img src="https://github.com/NIKTRUP/ImageLib/assets/72292425/169bbb34-5323-4f3b-989c-32747fea2e16" width=65% height=65%>
+<img src="https://github.com/NTG-TPL/ImageConverter/assets/72292425/2ca7c96d-ab3b-405d-a47c-2b557ecedf48" width=65% height=65%>
 
 
 * Шифрование изображения.\
 Пример: `./imgconv cat.jpg cat_cypher.jpg cypher 42`. Целое положительное число после команды `cypher` задаёт ключ шифрования.
 Расшифровка ранее зашифрованного изображения производится повторным вызовом программы с тем же ключом шифрования.
-<img src="https://github.com/NIKTRUP/ImageLib/assets/72292425/60b3d873-6d6e-4f2d-972a-262eae8c6b0b" width=65% height=65%>
+<img src="https://github.com/NTG-TPL/ImageConverter/assets/72292425/70a8a138-39f8-4f2d-9241-65cf4e8ca073" width=65% height=65%>
 
 
 * Отражение по горизонтали.\
 Пример: `./imgconv cat.jpg cat_hmirror.jpg hmirror`
-<img src="https://github.com/NIKTRUP/ImageLib/assets/72292425/a37d8a46-2cef-45ec-b71d-888c32b379c4" width=65% height=65%>
-
+<img src="https://github.com/NTG-TPL/ImageConverter/assets/72292425/b13f4751-51a6-4d18-b761-0fe5c3f76294" width=65% height=65%>
 
 * Отражение по вертикали.\
 Пример: `./imgconv cat.jpg cat_vmirror.jpg vmirror`
-<img src="https://github.com/NIKTRUP/ImageLib/assets/72292425/6277e987-9c63-486e-88dc-804ea269355c" width=65% height=65%>
-
+<img src="https://github.com/NTG-TPL/ImageConverter/assets/72292425/9e0cba5f-db69-49c7-9f2e-5b82034f444c" width=65% height=65%>
 
 * Создание негатива.\
 Пример: `./imgconv cat.jpg cat_negate.jpg negate`
-<img src="https://github.com/NIKTRUP/ImageLib/assets/72292425/fd98d6f4-2c85-4b93-bbdb-a87b1a54bc2c" width=65% height=65%>
-
+<img src="https://github.com/NTG-TPL/ImageConverter/assets/72292425/dcf9e2e8-59df-42b3-bad6-9288c68aad47" width=65% height=65%>
 
 * Применение оператора Собеля.\
 Пример: `./imgconv cat.jpg cat_sobel.jpg sobel`
-<img src="https://github.com/NIKTRUP/ImageLib/assets/72292425/8e00dfcf-ec52-4134-9e60-ffc3be52c889" width=65% height=65%>
+<img src="https://github.com/NTG-TPL/ImageConverter/assets/72292425/069bb93d-5145-4844-80e2-6b72d2e2dd23" width=65% height=65%>
 
 # Сборка и установка
 Для сборки программы необходим компилятор С++, поддерживающий стандарт не ниже С++17, CMake не ниже версии 3.11. , библиотека LibJPEG
