@@ -163,32 +163,6 @@ int TryApplyCommand(img_lib::Image& image, int argc, const char** argv){
         }
     }
     return 0;
-
-//    if(action == "hmirror"sv) {
-//        editor::HMirrInplace(image);
-//    }else if(action == "vmirror"sv) {
-//        editor::VMirrInplace(image);
-//    }else if(action == "sobel"sv) {
-//        image = editor::Sobel(image);
-//    }else if(action == "negate"sv) {
-//        editor::NegateInplace(image);
-//    }else if(action == "cypher"sv && argc == 5) {
-//        int key = atoi(argv[4]);
-//        editor::CypherInplace(key, image);
-//    }else if(action == "brightness"sv && argc == 5){
-//        int brightness = atoi(argv[4]);
-//        editor::ChangeBrightness(image, brightness);
-//    }else if(action == "crop"sv && argc == 8){
-//        editor::Point   left_top = {atoi(argv[4]), atoi(argv[5])},
-//            right_down = {atoi(argv[6]), atoi(argv[7])};
-//        try {
-//            image = editor::CropInplace(image, left_top, right_down);
-//            std::runtime_error
-//        } catch (const std::runtime_error& er){
-//            std::cerr << er.what();
-//            return static_cast<int>(Errors::UsedOptions);
-//        }
-//    }
 }
 
 int main(int argc, const char** argv) {
